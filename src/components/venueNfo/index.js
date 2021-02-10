@@ -25,7 +25,7 @@ const VenueNfo = () => {
                   Event Date & Time
                 </div>
                 <div className="vn_desc">
-                  29 Octombrie 2020 @18:00
+                  26 June 2021 @16:00
                 </div>
               </div>
             </div>
@@ -47,7 +47,7 @@ const VenueNfo = () => {
                   Event Location
                 </div>
                 <div className="vn_desc">
-                  Comuna Epureni, Vaslui
+                  IFEMA Feria de Madrid, Spain
                 </div>
               </div>
             </div>

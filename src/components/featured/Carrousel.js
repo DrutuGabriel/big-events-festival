@@ -29,6 +29,7 @@ const Carrousel = () => {
               className="carrousel_image"
               style={{
                 background: `url(${slide_one})`,
+                backgroundPosition: 'center right',
                 height: `${window.innerHeight}px`
               }}
             ></div>
@@ -38,6 +39,7 @@ const Carrousel = () => {
               className="carrousel_image"
               style={{
                 background: `url(${slide_two})`,
+                backgroundPosition: 'top center',
                 height: `${window.innerHeight}px`
               }}
             ></div>
@@ -47,6 +49,7 @@ const Carrousel = () => {
               className="carrousel_image"
               style={{
                 background: `url(${slide_three})`,
+                backgroundPosition: 'top center',
                 height: `${window.innerHeight}px`
               }}
             ></div>

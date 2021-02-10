@@ -1,67 +1,65 @@
-import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
+import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 
-import MyButton from '../utils/MyButton';
+import MyButton from "../utils/MyButton";
 
 class Discount extends Component {
-
   state = {
     discountStart: 0,
-    discountEnd: 30
-  }
+    discountEnd: 69,
+  };
 
   percentage = () => {
-    if(this.state.discountStart < this.state.discountEnd){
+    if (this.state.discountStart < this.state.discountEnd) {
       this.setState({
-        discountStart: this.state.discountStart + 1
+        discountStart: this.state.discountStart + 1,
       });
     }
   };
 
-  componentDidUpdate(){
-    setTimeout(() =>{
-      this.percentage()
-    }, 30)
+  componentDidUpdate() {
+    setTimeout(() => {
+      this.percentage();
+    }, 30);
   }
 
   render() {
     return (
       <div className="center_wrapper">
-          <div className="discount_wrapper">
+        <div className="discount_wrapper">
+          <Fade
+            onReveal={() => {
+              this.percentage();
+            }}
+          >
+            <div className="discount_percentage">
+              <span>{this.state.discountStart}+</span>
+              <span>ARTISTS</span>
+            </div>
+          </Fade>
 
-            <Fade 
-              onReveal={() => {
-                this.percentage()
-              }}
-            >
-              <div className="discount_percentage">
-                  <span>{this.state.discountStart}%</span>
-                  <span>OFF</span>
-              </div>
-            </Fade>
+          <Slide right>
+            <div className="discount_description">
+              <h3>Escenario Dance</h3>
+              <p>
+                Regi from Milk Inc, INNA, Kate Ryan, Cascada, Lasgo, Jessy, Jan
+                Wayne, Trouser Enthusiast, Fragma, Warp Brothers, Astroline, La
+                Luna vs Dee Dee, Spacio ft Rafa Ruiz, Lazzard, Paul Droid, Dj
+                Marta, The Kid ft Noemy, Eva Marti, Marian Dacal, Clublanders y
+                Head Hornys & Miguel Serna y Jumper Brothers. Y muchos mas de
+                Escenario Pop y Playa!
+              </p>
 
-            <Slide right>
-              <div className="discount_description">
-                <h3>Purcahse tickets before 29 Octomber</h3>
-                <p>It is a long established fact that a reader will 
-                    be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum
-                    is that it has a more-or-less normal distribution of
-                    letters, as opposed to using 'Content here, content here',
-                    making it look like readable English.
-                  </p>
-
-                  <MyButton 
-                    text="Purchase tickets"
-                    bck="#ffa800"
-                    color="#ffffff"
-                    link="https://devdare.com"
-                  />
-              </div>
-            </Slide>
-
-          </div>
+              <MyButton
+                text="Purchase tickets"
+                bck="#ffa800"
+                color="#ffffff"
+                link="https://www.eventbrite.es/e/entradas-love-the-tuentis-festival-72938700617"
+              />
+            </div>
+          </Slide>
+        </div>
       </div>
     );
   }

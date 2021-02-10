@@ -81,7 +81,6 @@ footer .footer_copyright {
 }
 
 .carrousel_image {
-    
     background-size: cover !important;
 }
 
@@ -103,7 +102,7 @@ footer .footer_copyright {
     text-align: center;
     color: #fff;
     font-size: 40px;
-    padding: 21px 70px 0px 70px;
+    padding: 21px 30px 0px 30px;
     text-transform: uppercase;
 }
 
@@ -241,7 +240,9 @@ footer .footer_copyright {
 }
 
 .discount_wrapper .discount_percentage {
-    padding-right: 100px;
+    padding-right: 50px;
+    width: 403px;
+
 }
 
 .discount_wrapper .discount_percentage span:nth-child(1) {
@@ -357,4 +358,219 @@ footer .footer_copyright {
     font-size: 29px;
     padding: 15px 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 920px){
+    .center_wrapper {
+        width: 100%;
+    }
+    header .header_logo_venue {
+        font-size: 28px;
+    }
+    .artist_name {
+        width: 290px;
+        height: 138px;
+    }
+    .artist_name .wrapper {
+        height: 100px;
+        font-size: 30px;
+    }
+    .countdown_wrapper .countdown_time {
+        font-size: 35px;
+    }
+    .countdown_wrapper .countdown_top {
+        font-size: 15px;
+    }
+    .vn_wrapper {
+        padding: 120px 0px;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .vn_item {
+       width:100%;
+    }
+    .vn_item .vn_outer {
+        width: 260px;
+    }
+    .vn_item .vn_icon_square {
+        width: 80px;
+        height: 80px;
+        top: -44px;
+        left: 90px;
+    }
+    .vn_item .vn_icon {
+        width: 40px;
+        height: 40px;
+        top: -24px;
+        left: 110px;
+    }
+    .vn_item .vn_title {
+        font-size: 24px;
+        margin: 75px 0px 20px 0px;
+        border-bottom: 1px solid #5d5d5d;
+        padding-bottom: 10px;
+    }
+    .vn_item .vn_desc {
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+    .vn_item:nth-of-type(2){
+        margin-top: 100px;
+    }
+
+    .highlight_wrapper h2 {
+        display: none;
+    }
+    .discount_wrapper {
+        padding: 30px 0px 70px;
+        flex-flow: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .discount_wrapper .discount_percentage {
+        padding-right: 0;
+        width: 403px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .discount_wrapper .discount_percentage span:nth-child(1) {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .discount_wrapper .discount_percentage span:nth-child(2) {
+        font-size: 40px;
+    }
+    .discount_wrapper .discount_description {
+        margin-top: 35px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .discount_wrapper .discount_description h3 {
+        font-size: 26px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .discount_wrapper .discount_description p {
+        line-height: 30px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .pricing_wrapper {
+        flex-flow: column;
+        align-items: center;
+    }
+    .highlight_wrapper .highlight_description {
+        padding: 30px 15px;
+        text-align: justify;
+    }
+    
+    footer {
+        font-size: 30px;
+    }
+    footer .footer_copyright {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    header {
+        padding: 5px 0 !important;
+    }
+    header .header_logo_venue {
+        font-size: 20px;
+    }
+    header .header_logo_title {
+        font-size: 12px;
+    }
+    .artist_name {
+        width: 220px;
+        height: 86px;
+    }
+    .artist_name .wrapper {
+        height: 54px;
+        font-size: 22px;
+        padding: 10px 20px 10px 20px;
+        margin: 4px;
+        font-weight: 500;
+    }
+
+    .center_wrapper {
+        box-sizing: border-box;
+        padding: 0 15px;
+        overflow: hidden;
+    }
+    .countdown_wrapper .countdown_top {
+        font-size: 12px;
+    }
+    .countdown_wrapper .countdown_bottom {
+        padding: 10px 0px 10px 20px;
+    }
+    .countdown_wrapper .countdown_time {
+        font-size: 24px;
+        margin-right: 14px;
+        padding-right: 20px;
+    }
+    .countdown_wrapper .countdown_tag {
+        font-size: 14px;
+        padding-left: 0px;
+    }
+
+    .discount_wrapper .discount_description p {
+        text-align: justify;
+    }
+
+    .vn_item .vn_outer {
+        width: 220px;
+    }
+    .vn_item .vn_icon_square {
+        width: 70px;
+        height: 70px;
+        top: -38px;
+        left: 75px;
+    }
+    .vn_item .vn_icon {
+        width: 36px;
+        height: 36px;
+        top: -21px;
+        left: 92px;
+    }
+    .vn_item .vn_title {
+        font-size: 20px;
+    }
+    .vn_item .vn_desc {
+        font-size: 20px;
+    }
+    .discount_wrapper .discount_percentage span:nth-child(1) {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .discount_wrapper .discount_percentage span:nth-child(2) {
+        font-size: 35px;
+    }
+    .discount_wrapper .discount_description h3 {
+        font-size: 24px;
+    }
+    .location_tag div {
+        width: 160px;
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+    .pricing_wrapper {
+        margin-bottom: 30px;
+    }
+    .pricing_section h2 {
+        font-size: 2.5rem;
+        margin: 40px auto 10px;
+    }
+    .pricing_inner_wrapper .pricing_title span:nth-child(1) {
+        font-size: 2rem;
+        display: block;
+    }
+    .pricing_inner_wrapper .pricing_title span:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .pricing_wrapper .pricing_item {
+        width: 80%;
+    }
 }

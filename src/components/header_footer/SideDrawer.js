@@ -28,23 +28,23 @@ const SideDrawer = (props) => {
     >
       <List component="nav">
         <ListItem button onClick={() => scrollToElement('featured')}>
-          Evenimentul incepe in
+          Event starts in
         </ListItem>
 
         <ListItem button onClick={() => scrollToElement('venuenfo')}>
-          Despre locatie
+          Venue info
         </ListItem>
 
         <ListItem button onClick={() => scrollToElement('highlights')}>
-          Aspecte importante
+          Highlights
         </ListItem>
 
         <ListItem button onClick={() => scrollToElement('pricing')}>
-          Preturi
+          Pricing
         </ListItem>
 
         <ListItem button onClick={() => scrollToElement('location')}>
-          Locatie
+          Location
         </ListItem>
       </List>
     </Drawer>

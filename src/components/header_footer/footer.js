@@ -6,10 +6,10 @@ const Footer = () => {
     <footer className="bck_red">
       <Fade delay={50}>
         <div className="font_righteous footer_logo_venue">
-          The Venue
+          Big Events
         </div>
         <div className="footer_copyright">
-          The venue 2020. All rights reserved.
+          Big Events 2021. All rights reserved.
         </div>
       </Fade>
     </footer>

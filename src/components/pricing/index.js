@@ -6,17 +6,15 @@ import Zoom from 'react-reveal/Zoom';
 class Pricing extends Component {
 
   state = {
-    prices: [100, 150, 250],
-    positions: ['Balcony', 'Medium', 'Star'],
+    prices: [59.41, 154.00 ],
+    positions: ['General', 'VIP'],
     desc: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+      "Entrada con acceso al recinto en zona general. Una vez dentro, no se permitirá la salida y la re-entrada, de tal manera que si decide abandonar el recinto, no podrá volver a acceder con la misma entrada.",
+      "Una vez dentro, no se permitirá la salida y la re-entrada, de tal manera que si decide abandonar el recinto, no podrá volver a acceder con la misma entrada.",
     ],
     linkto: [
-      'https://devdare.com/sales/balcony',
-      'https://devdare.com/sales/medium',
-      'https://devdare.com/sales/star',
+      'https://www.eventbrite.es/e/entradas-love-the-tuentis-festival-72938700617',
+      'https://www.ticketmaster.es/event/love-the-tuentis-entradas/18979?eventId=18979',
     ],
     delay:[500, 0, 500]
   }
